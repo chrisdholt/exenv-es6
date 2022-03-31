@@ -6,7 +6,8 @@
         "baseUrl": ".",
         "declaration": true,
         "esModuleInterop": true,
-        "outDir": "./dist"
+        "outDir": "./dist",
+        "allowJs": true
     },
     "include": [
         "src/**/*"
