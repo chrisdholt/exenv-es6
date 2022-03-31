@@ -5,6 +5,7 @@
         "target": "ES6",
         "baseUrl": ".",
         "declaration": true,
+        "esModuleInterop": true,
         "outDir": "./dist"
     },
     "include": [
