@@ -1,4 +1,4 @@
-import { canUseDOM } from "./can-use-dom";
+import { canUseDOM } from "./can-use-dom.js";
 
 /**
  * Checks if Event Listeners are available for use
