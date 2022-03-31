@@ -17,7 +17,7 @@
     "author": {
         "name": "Chris Holt"
     },
-    "version": "1.1.0",
+    "version": "1.1.1",
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -51,6 +51,15 @@
             "^.+\\.ts?$": "ts-jest"
         },
         "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js|ts?)$",
+        "extensionsToTreatAsEsm": [".ts"],
+        "globals": {
+            "ts-jest": {
+                "useESM": true
+            }
+        },
+        "moduleNameMapper": {
+            "^(\\.{1,2}/.*)\\.js$": "$1"
+        },
         "moduleFileExtensions": [
             "js",
             "ts"
