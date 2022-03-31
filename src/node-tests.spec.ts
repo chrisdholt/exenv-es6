@@ -1,13 +1,10 @@
 /**
  * @jest-environment node
  */
-
-import {
-    canUseDOM,
-    canUseEventListeners,
-    canUseViewport,
-    canUseWorkers
-} from "./index";
+import { canUseDOM } from "./can-use-dom";
+import { canUseEventListeners } from "./can-use-event-listeners";
+import { canUseViewport } from "./can-use-viewport";
+import { canUseWorkers } from "./can-use-workers";
 
 describe("canUseDOM", (): void => {
     test("should return false in a node environment where the browser is not available", (): void => {

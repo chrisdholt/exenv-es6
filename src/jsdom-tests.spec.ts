@@ -1,13 +1,10 @@
 /**
  * @jest-environment jsdom
  */
-
-import {
-    canUseDOM,
-    canUseEventListeners,
-    canUseViewport,
-    canUseWorkers
-} from "./index";
+import { canUseDOM } from "./can-use-dom";
+import { canUseEventListeners } from "./can-use-event-listeners";
+import { canUseViewport } from "./can-use-viewport";
+import { canUseWorkers } from "./can-use-workers";
 
 describe("canUseDOM", (): void => {
     test("should return true when jsdom is enabled and mocking the browser", (): void => {
